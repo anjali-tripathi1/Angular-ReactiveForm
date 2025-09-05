@@ -13,8 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/ReactiveForms",
-            "index": "src/index.html",
+
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -87,6 +86,9 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
